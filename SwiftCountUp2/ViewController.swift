@@ -39,9 +39,6 @@ class ViewController: UIViewController {
         if count >= 10 {
             changeTextColor()
         }
-        else if count <= 0 {
-            resetColor()
-        }
     }
     
     
@@ -54,6 +51,9 @@ class ViewController: UIViewController {
         
         
         // set color white when the int is under 0.
+        if count <= 0 {
+            resetColor()
+        }
         
     }
     
